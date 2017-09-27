@@ -1,12 +1,2 @@
-export interface IPerson {
-    name: string;
-    age: number;
-}
-export declare class Person {
-    private name;
-    private age;
-    constructor(name: string, age: number);
-    getName(): string;
-    getAge(): number;
-    get(): IPerson;
-}
+import { IResult, ILog, IWarn, IInfo, IError, IDebug } from './IResult';
+export { IResult, ILog, IWarn, IInfo, IError, IDebug };

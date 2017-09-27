@@ -2,11 +2,11 @@
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
 	else if(typeof define === 'function' && define.amd)
-		define("dyna-ts-module-boilerplate", [], factory);
+		define("dyna-interfaces", [], factory);
 	else if(typeof exports === 'object')
-		exports["dyna-ts-module-boilerplate"] = factory();
+		exports["dyna-interfaces"] = factory();
 	else
-		root["dyna-ts-module-boilerplate"] = factory();
+		root["dyna-interfaces"] = factory();
 })(this, function() {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -83,25 +83,6 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    getName() {
-        return this.name;
-    }
-    getAge() {
-        return this.age;
-    }
-    get() {
-        return {
-            name: this.name,
-            age: this.age
-        };
-    }
-}
-exports.Person = Person;
 
 
 /***/ }),
