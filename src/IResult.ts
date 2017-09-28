@@ -23,7 +23,7 @@ export interface IInfo extends ILog {
 }
 
 export interface IError extends ILog {
-  error: any;             // the raw error object
+  error?: any;            // the raw error object
 }
 
 export interface IDebug extends ILog {

@@ -7,7 +7,7 @@ Common typescript interfaces for applications.
 Interface are the contract between the object user the object itself. 
 
 This makes the interface also the blueprint of the object.
-Through the interfaces the logic is depicted, so are important! 
+Through the interfaces the logic is depicted, so they are important! 
 
 # IResult interface, ILog IError IInfo IDebug
 
