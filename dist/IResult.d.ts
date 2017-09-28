@@ -19,7 +19,7 @@ export interface IWarn extends ILog {
 export interface IInfo extends ILog {
 }
 export interface IError extends ILog {
-    error: any;
+    error?: any;
 }
 export interface IDebug extends ILog {
 }
