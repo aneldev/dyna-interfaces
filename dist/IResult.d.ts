@@ -2,10 +2,10 @@ export interface IResult {
     success?: boolean;
     data?: any;
     log?: ILog;
-    info?: ILog;
-    warn?: ILog;
-    error?: ILog;
-    debug?: ILog;
+    info?: IInfo;
+    warn?: IWarn;
+    error?: IError;
+    debug?: IDebug;
 }
 export interface ILog {
     code?: number | string;

@@ -2,10 +2,10 @@ export interface IResult {
   success?: boolean;      // in case of progress, this is undefined
   data?: any;             // the output of the result
   log?: ILog;             // infos...
-  info?: ILog;
-  warn?: ILog;
-  error?: ILog;
-  debug?: ILog;
+  info?: IInfo;
+  warn?: IWarn;
+  error?: IError;
+  debug?: IDebug;
 }
 
 export interface ILog {
