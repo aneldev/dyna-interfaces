@@ -14,9 +14,11 @@ export interface ILog {
     data?: any;
     parent?: IResult;
 }
-export interface IWarn extends ILog {
-}
 export interface IInfo extends ILog {
+    progress?: number;
+    values?: any;
+}
+export interface IWarn extends ILog {
 }
 export interface IError extends ILog {
     error?: any;

@@ -16,10 +16,13 @@ export interface ILog {
   parent?: IResult;       // in case of bubble, the parent of it
 }
 
-export interface IWarn extends ILog {
+export interface IInfo extends ILog {
+  // Info most of the times is used for messages for the user
+  progress?: number;      // 0 to 1 indicating the progress (0.10 = 10%, 1 = 100%)
+  values?: any;           // values object to be used in case where the message is translation key (see yahoo intl)
 }
 
-export interface IInfo extends ILog {
+export interface IWarn extends ILog {
 }
 
 export interface IError extends ILog {
