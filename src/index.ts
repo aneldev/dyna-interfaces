@@ -7,6 +7,10 @@ import {
   IDebug,
 } from './IResult';
 
+import {
+  IDynaLabel
+} from './UI';
+
 export {
   IResult,
   ILog,
@@ -14,4 +18,6 @@ export {
   IInfo,
   IError,
   IDebug,
+
+  IDynaLabel,
 }
