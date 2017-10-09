@@ -1,6 +1,6 @@
 export interface IResult {
   success?: boolean;      // in case of progress, this is undefined
-  type?: boolean;         // division of result, in case of multiple results
+  type?: string;          // division of result, in case of multiple results
   data?: any;             // the output of the result
   log?: ILog;             // infos...
   info?: IInfo;

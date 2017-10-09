@@ -1,6 +1,6 @@
 export interface IResult {
     success?: boolean;
-    type?: boolean;
+    type?: string;
     data?: any;
     log?: ILog;
     info?: IInfo;
