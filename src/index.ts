@@ -11,6 +11,10 @@ import {
   IDynaLabel
 } from './UI';
 
+import {
+  IResponse
+} from './IResponse';
+
 export {
   IResult,
   ILog,
@@ -20,4 +24,6 @@ export {
   IDebug,
 
   IDynaLabel,
+
+  IResponse,
 }
