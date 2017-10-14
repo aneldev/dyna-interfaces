@@ -3,7 +3,7 @@ import {
   ILog,
   IWarn,
   IInfo,
-  IError,
+  IError, EErrorType,
   IDebug,
 } from './IResult';
 
@@ -20,7 +20,7 @@ export {
   ILog,
   IWarn,
   IInfo,
-  IError,
+  IError, EErrorType,
   IDebug,
 
   IDynaLabel,

@@ -21,8 +21,14 @@ export interface IInfo extends ILog {
 }
 export interface IWarn extends ILog {
 }
+export declare enum EErrorType {
+    USER = 0,
+    APP = 1,
+    HW = 2,
+}
 export interface IError extends ILog {
-    error?: any;
+    error?: Error | any;
+    errorType?: EErrorType;
 }
 export interface IDebug extends ILog {
 }

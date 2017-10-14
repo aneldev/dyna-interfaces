@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 1);
+/******/ 	return __webpack_require__(__webpack_require__.s = 2);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -83,10 +83,27 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+const IResult_1 = __webpack_require__(1);
+exports.EErrorType = IResult_1.EErrorType;
 
 
 /***/ }),
 /* 1 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var EErrorType;
+(function (EErrorType) {
+    EErrorType[EErrorType["USER"] = 0] = "USER";
+    EErrorType[EErrorType["APP"] = 1] = "APP";
+    EErrorType[EErrorType["HW"] = 2] = "HW";
+})(EErrorType = exports.EErrorType || (exports.EErrorType = {}));
+
+
+/***/ }),
+/* 2 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);

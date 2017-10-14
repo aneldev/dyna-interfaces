@@ -1,4 +1,4 @@
-import { IResult, ILog, IWarn, IInfo, IError, IDebug } from './IResult';
+import { IResult, ILog, IWarn, IInfo, IError, EErrorType, IDebug } from './IResult';
 import { IDynaLabel } from './UI';
 import { IResponse } from './IResponse';
-export { IResult, ILog, IWarn, IInfo, IError, IDebug, IDynaLabel, IResponse };
+export { IResult, ILog, IWarn, IInfo, IError, EErrorType, IDebug, IDynaLabel, IResponse };
