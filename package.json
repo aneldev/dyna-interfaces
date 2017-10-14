@@ -1,6 +1,6 @@
 {
   "name": "dyna-interfaces",
-  "version": "1.5.1",
+  "version": "1.6.0",
   "description": "Common interfaces for applications",
   "repository": {
     "type": "git",
