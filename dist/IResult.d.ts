@@ -1,7 +1,7 @@
-export interface IResult {
+export interface IResult<TData> {
     success?: boolean;
     type?: string;
-    data?: any;
+    data?: TData;
     log?: ILog;
     info?: IInfo;
     warn?: IWarn;
@@ -13,7 +13,6 @@ export interface ILog {
     section?: string;
     message?: string;
     data?: any;
-    parent?: IResult;
 }
 export interface IInfo extends ILog {
     progress?: number;
