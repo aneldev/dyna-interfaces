@@ -1,9 +1,10 @@
 import {IError} from "./IResult";
 
-export interface IResponse {
+export interface IResponse<TData> {
   command?: string;
   interface?: string;
-  data?: any;
+  status?: number;
+  data?: TData;
   completed?: boolean;
   error?:IError;
 }

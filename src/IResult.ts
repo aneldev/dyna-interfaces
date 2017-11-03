@@ -1,7 +1,7 @@
-export interface IResult {
+export interface IResult<TData> {
   success?: boolean;      // in case of progress, this is undefined
   type?: string;          // division of result, in case of multiple results
-  data?: any;             // the output of the result
+  data?: TData;           // in case of progress, this is undefined;             // the output of the result
   log?: ILog;             // infos...
   info?: IInfo;
   warn?: IWarn;
@@ -10,11 +10,10 @@ export interface IResult {
 }
 
 export interface ILog {
-  code?: number | string; // code of the info/error/...
-  section?: string;       // section of the application, action
-  message?: string;       // a meaningful dev/debug message
-  data?: any;             // optional data of this section/action
-  parent?: IResult;       // in case of bubble, the parent of it
+  code?: number | string;     // code of the info/error/...
+  section?: string;           // section of the application, action
+  message?: string;           // a meaningful dev/debug message
+  data?: any;                 // optional data of this section/action
 }
 
 export interface IInfo extends ILog {
