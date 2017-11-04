@@ -14,6 +14,9 @@ import {
 import {
   IResponse
 } from './IResponse';
+import {
+  ERequestMethod
+} from './network';
 
 export {
   IResult,
@@ -26,4 +29,6 @@ export {
   IDynaLabel,
 
   IResponse,
+
+  ERequestMethod,
 }

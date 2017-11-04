@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 2);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -85,6 +85,8 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", { value: true });
 const IResult_1 = __webpack_require__(1);
 exports.EErrorType = IResult_1.EErrorType;
+const network_1 = __webpack_require__(2);
+exports.ERequestMethod = network_1.ERequestMethod;
 
 
 /***/ }),
@@ -104,6 +106,23 @@ var EErrorType;
 
 /***/ }),
 /* 2 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
+var ERequestMethod;
+(function (ERequestMethod) {
+    // help: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+    ERequestMethod[ERequestMethod["GET"] = 0] = "GET";
+    ERequestMethod[ERequestMethod["POST"] = 1] = "POST";
+    ERequestMethod[ERequestMethod["PUT"] = 2] = "PUT";
+    ERequestMethod[ERequestMethod["DELETE"] = 3] = "DELETE";
+})(ERequestMethod = exports.ERequestMethod || (exports.ERequestMethod = {}));
+
+
+/***/ }),
+/* 3 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);
