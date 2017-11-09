@@ -14,9 +14,15 @@ import {
 import {
   IResponse
 } from './IResponse';
+
 import {
   ERequestMethod
 } from './network';
+
+import {
+  EFormMode,
+  EFormControlMode,
+}from './forms'
 
 export {
   IResult,
@@ -31,4 +37,7 @@ export {
   IResponse,
 
   ERequestMethod,
+
+  EFormMode,
+  EFormControlMode,
 }

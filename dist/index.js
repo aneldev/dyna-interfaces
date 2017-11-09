@@ -73,7 +73,7 @@ return /******/ (function(modules) { // webpackBootstrap
 /******/ 	__webpack_require__.p = "/dist/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -85,8 +85,11 @@ return /******/ (function(modules) { // webpackBootstrap
 Object.defineProperty(exports, "__esModule", { value: true });
 const IResult_1 = __webpack_require__(1);
 exports.EErrorType = IResult_1.EErrorType;
-const network_1 = __webpack_require__(2);
+const network_1 = __webpack_require__(3);
 exports.ERequestMethod = network_1.ERequestMethod;
+const forms_1 = __webpack_require__(2);
+exports.EFormMode = forms_1.EFormMode;
+exports.EFormControlMode = forms_1.EFormControlMode;
 
 
 /***/ }),
@@ -111,6 +114,27 @@ var EErrorType;
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
+var EFormMode;
+(function (EFormMode) {
+    EFormMode[EFormMode["CREATE"] = 0] = "CREATE";
+    EFormMode[EFormMode["VIEW"] = 1] = "VIEW";
+    EFormMode[EFormMode["EDIT"] = 2] = "EDIT";
+    EFormMode[EFormMode["DELETE"] = 3] = "DELETE";
+})(EFormMode = exports.EFormMode || (exports.EFormMode = {}));
+var EFormControlMode;
+(function (EFormControlMode) {
+    EFormControlMode[EFormControlMode["VIEW"] = 0] = "VIEW";
+    EFormControlMode[EFormControlMode["EDIT"] = 1] = "EDIT";
+})(EFormControlMode = exports.EFormControlMode || (exports.EFormControlMode = {}));
+
+
+/***/ }),
+/* 3 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", { value: true });
 var ERequestMethod;
 (function (ERequestMethod) {
     // help: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
@@ -122,7 +146,7 @@ var ERequestMethod;
 
 
 /***/ }),
-/* 3 */
+/* 4 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(0);
