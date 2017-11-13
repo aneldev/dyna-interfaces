@@ -142,8 +142,8 @@ var ERequestMethod;
     ERequestMethod[ERequestMethod["GET"] = 0] = "GET";
     ERequestMethod[ERequestMethod["POST"] = 1] = "POST";
     ERequestMethod[ERequestMethod["PUT"] = 2] = "PUT";
-    ERequestMethod[ERequestMethod["DELETE"] = 3] = "DELETE";
-    ERequestMethod[ERequestMethod["PATCH"] = 4] = "PATCH";
+    ERequestMethod[ERequestMethod["PATCH"] = 3] = "PATCH";
+    ERequestMethod[ERequestMethod["DELETE"] = 4] = "DELETE";
 })(ERequestMethod = exports.ERequestMethod || (exports.ERequestMethod = {}));
 
 
