@@ -3,4 +3,5 @@ export declare enum ERequestMethod {
     POST = 1,
     PUT = 2,
     DELETE = 3,
+    PATCH = 4,
 }

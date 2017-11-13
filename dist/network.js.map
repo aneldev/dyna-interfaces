@@ -1,1 +1,1 @@
-{"version":3,"file":"network.js","sourceRoot":"","sources":["../src/network.ts"],"names":[],"mappings":";;AAAA,IAAY,cAGX;AAHD,WAAY,cAAc;IACxB,kEAAkE;IAClE,iDAAG,CAAA;IAAE,mDAAI,CAAA;IAAE,iDAAG,CAAA;IAAE,uDAAM,CAAA;AACxB,CAAC,EAHW,cAAc,GAAd,sBAAc,KAAd,sBAAc,QAGzB"}
+{"version":3,"file":"network.js","sourceRoot":"","sources":["../src/network.ts"],"names":[],"mappings":";;AAAA,IAAY,cAIX;AAJD,WAAY,cAAc;IACxB,kEAAkE;IAClE,0DAA0D;IAC1D,iDAAG,CAAA;IAAE,mDAAI,CAAA;IAAE,iDAAG,CAAA;IAAE,uDAAM,CAAA;IAAE,qDAAK,CAAA;AAC/B,CAAC,EAJW,cAAc,GAAd,sBAAc,KAAd,sBAAc,QAIzB"}

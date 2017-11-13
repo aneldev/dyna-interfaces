@@ -138,10 +138,12 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var ERequestMethod;
 (function (ERequestMethod) {
     // help: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
+    // http://www.restapitutorial.com/lessons/httpmethods.html
     ERequestMethod[ERequestMethod["GET"] = 0] = "GET";
     ERequestMethod[ERequestMethod["POST"] = 1] = "POST";
     ERequestMethod[ERequestMethod["PUT"] = 2] = "PUT";
     ERequestMethod[ERequestMethod["DELETE"] = 3] = "DELETE";
+    ERequestMethod[ERequestMethod["PATCH"] = 4] = "PATCH";
 })(ERequestMethod = exports.ERequestMethod || (exports.ERequestMethod = {}));
 
 
