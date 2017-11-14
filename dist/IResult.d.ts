@@ -28,6 +28,7 @@ export declare enum EErrorType {
 export interface IError extends ILog {
     error?: Error | any;
     errorType?: EErrorType;
+    networkStatus?: number;
 }
 export interface IDebug extends ILog {
 }
