@@ -5,3 +5,4 @@ export declare enum ERequestMethod {
     PATCH = 3,
     DELETE = 4,
 }
+export declare type TRequestMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";

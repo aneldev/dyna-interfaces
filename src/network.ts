@@ -3,3 +3,4 @@ export enum ERequestMethod {
   // http://www.restapitutorial.com/lessons/httpmethods.html
   GET, POST, PUT, PATCH, DELETE,
 }
+export type TRequestMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
