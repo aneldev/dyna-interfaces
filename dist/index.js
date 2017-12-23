@@ -83,11 +83,11 @@ return /******/ (function(modules) { // webpackBootstrap
 "use strict";
 
 Object.defineProperty(exports, "__esModule", { value: true });
-const IResult_1 = __webpack_require__(1);
+var IResult_1 = __webpack_require__(1);
 exports.EErrorType = IResult_1.EErrorType;
-const network_1 = __webpack_require__(3);
+var network_1 = __webpack_require__(3);
 exports.ERequestMethod = network_1.ERequestMethod;
-const forms_1 = __webpack_require__(2);
+var forms_1 = __webpack_require__(2);
 exports.EFormMode = forms_1.EFormMode;
 exports.EFormControlMode = forms_1.EFormControlMode;
 
