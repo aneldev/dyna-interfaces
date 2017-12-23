@@ -1,10 +1,10 @@
 export declare enum EFormMode {
-    CREATE = 0,
-    VIEW = 1,
-    EDIT = 2,
-    DELETE = 3,
+    CREATE = "CREATE",
+    VIEW = "VIEW",
+    EDIT = "EDIT",
+    DELETE = "DELETE",
 }
 export declare enum EFormControlMode {
-    VIEW = 0,
-    EDIT = 1,
+    VIEW = "VIEW",
+    EDIT = "EDIT",
 }

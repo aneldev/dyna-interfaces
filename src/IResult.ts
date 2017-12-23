@@ -26,7 +26,7 @@ export interface IWarn extends ILog {
 }
 
 export enum EErrorType {
-  USER, APP, HW
+  USER = "USER_ERROR", APP = "APP_ERROR", HW = "HW_ERROR"
 }
 
 export interface IError extends ILog {

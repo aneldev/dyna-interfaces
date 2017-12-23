@@ -17,7 +17,6 @@ import {
 
 import {
   ERequestMethod,
-  TRequestMethod,
 } from './network';
 
 import {
@@ -38,7 +37,6 @@ export {
   IResponse,
 
   ERequestMethod,
-  TRequestMethod,
 
   EFormMode,
   EFormControlMode,

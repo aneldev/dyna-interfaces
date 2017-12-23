@@ -101,9 +101,9 @@ exports.EFormControlMode = forms_1.EFormControlMode;
 Object.defineProperty(exports, "__esModule", { value: true });
 var EErrorType;
 (function (EErrorType) {
-    EErrorType[EErrorType["USER"] = 0] = "USER";
-    EErrorType[EErrorType["APP"] = 1] = "APP";
-    EErrorType[EErrorType["HW"] = 2] = "HW";
+    EErrorType["USER"] = "USER_ERROR";
+    EErrorType["APP"] = "APP_ERROR";
+    EErrorType["HW"] = "HW_ERROR";
 })(EErrorType = exports.EErrorType || (exports.EErrorType = {}));
 
 
@@ -116,15 +116,15 @@ var EErrorType;
 Object.defineProperty(exports, "__esModule", { value: true });
 var EFormMode;
 (function (EFormMode) {
-    EFormMode[EFormMode["CREATE"] = 0] = "CREATE";
-    EFormMode[EFormMode["VIEW"] = 1] = "VIEW";
-    EFormMode[EFormMode["EDIT"] = 2] = "EDIT";
-    EFormMode[EFormMode["DELETE"] = 3] = "DELETE";
+    EFormMode["CREATE"] = "CREATE";
+    EFormMode["VIEW"] = "VIEW";
+    EFormMode["EDIT"] = "EDIT";
+    EFormMode["DELETE"] = "DELETE";
 })(EFormMode = exports.EFormMode || (exports.EFormMode = {}));
 var EFormControlMode;
 (function (EFormControlMode) {
-    EFormControlMode[EFormControlMode["VIEW"] = 0] = "VIEW";
-    EFormControlMode[EFormControlMode["EDIT"] = 1] = "EDIT";
+    EFormControlMode["VIEW"] = "VIEW";
+    EFormControlMode["EDIT"] = "EDIT";
 })(EFormControlMode = exports.EFormControlMode || (exports.EFormControlMode = {}));
 
 
@@ -139,11 +139,11 @@ var ERequestMethod;
 (function (ERequestMethod) {
     // help: https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods
     // http://www.restapitutorial.com/lessons/httpmethods.html
-    ERequestMethod[ERequestMethod["GET"] = 0] = "GET";
-    ERequestMethod[ERequestMethod["POST"] = 1] = "POST";
-    ERequestMethod[ERequestMethod["PUT"] = 2] = "PUT";
-    ERequestMethod[ERequestMethod["PATCH"] = 3] = "PATCH";
-    ERequestMethod[ERequestMethod["DELETE"] = 4] = "DELETE";
+    ERequestMethod["GET"] = "GET";
+    ERequestMethod["POST"] = "POST";
+    ERequestMethod["PUT"] = "PUT";
+    ERequestMethod["PATCH"] = "PATCH";
+    ERequestMethod["DELETE"] = "DELETE";
 })(ERequestMethod = exports.ERequestMethod || (exports.ERequestMethod = {}));
 
 

@@ -1,8 +1,7 @@
 export declare enum ERequestMethod {
-    GET = 0,
-    POST = 1,
-    PUT = 2,
-    PATCH = 3,
-    DELETE = 4,
+    GET = "GET",
+    POST = "POST",
+    PUT = "PUT",
+    PATCH = "PATCH",
+    DELETE = "DELETE",
 }
-export declare type TRequestMethod = "GET" | "POST" | "PUT" | "PATCH" | "DELETE";
