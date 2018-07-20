@@ -7,4 +7,5 @@ export interface IResponse<TData, TAuth> {
     completed?: boolean;
     auth?: TAuth;
     error?: IError;
+    _debugData?: any;
 }
