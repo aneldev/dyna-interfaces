@@ -10,7 +10,7 @@ export interface IResult<TData> {
 }
 
 export interface ILog {
-  code?: number | string;     // code of the info/error/...
+  code?: number | string;     // application logic code
   section?: string;           // section of the application, action
   message?: string;           // a meaningful dev/debug message
   data?: any;                 // optional data of this section/action
@@ -30,6 +30,7 @@ export enum EErrorType {
 }
 
 export interface IError extends ILog {
+  status: number;         // like network status error
   error?: Error | any;    // the raw error object
   errorType?: EErrorType;
   networkStatus?: number;

@@ -26,6 +26,7 @@ export declare enum EErrorType {
     HW = "HW_ERROR"
 }
 export interface IError extends ILog {
+    status: number;
     error?: Error | any;
     errorType?: EErrorType;
     networkStatus?: number;
