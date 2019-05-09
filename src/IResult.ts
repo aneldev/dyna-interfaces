@@ -30,7 +30,7 @@ export enum EErrorType {
 }
 
 export interface IError extends ILog {
-  status: number;         // like network status error
+  status?: number;        // like network status error
   error?: Error | any;    // the raw error object
   errorType?: EErrorType;
   networkStatus?: number;
