@@ -13,6 +13,7 @@ export interface ILog {
   code?: number | string;     // application logic code
   section?: string;           // section of the application, action
   message?: string;           // a meaningful dev/debug message
+  userMessage?: string;       // message intended for the user (consider translations)
   data?: any;                 // optional data of this section/action
 }
 
