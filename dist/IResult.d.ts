@@ -12,6 +12,7 @@ export interface ILog {
     code?: number | string;
     section?: string;
     message?: string;
+    userMessage?: string;
     data?: any;
 }
 export interface IInfo extends ILog {
