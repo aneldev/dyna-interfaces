@@ -27,3 +27,8 @@ export {
 export {
   IDynaPrice,
 } from './data';
+
+import {
+  AppName,
+  IAppNameConfig,
+} from './AppName';
