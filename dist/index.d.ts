@@ -4,3 +4,4 @@ export { IResponse } from './IResponse';
 export { ERequestMethod, } from './network';
 export { EFormMode, EFormControlMode, } from './forms';
 export { IDynaPrice, } from './data';
+export { AppName, IAppNameConfig, } from './AppName';
