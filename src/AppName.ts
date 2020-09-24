@@ -11,8 +11,10 @@ export interface IAppNameConfig {
     patch: number;
     flag?: string;
   },
-  nameDelimiter?: string;    // default: '--'
+  nameDelimiter?: string;    // default: DEFAUL_NAME_DELIMITER
 }
+
+const DEFAUL_NAME_DELIMITER = '--';
 
 export class AppName {
   private _config: IAppNameConfig;
@@ -24,8 +26,8 @@ export class AppName {
       machineName = 'UnknownMachine',
       mode = 'DEV',
       version = {major: 0, minor: 0, patch: 0},
-      nameDelimiter = '--',
-    } = config;
+      nameDelimiter = DEFAUL_NAME_DELIMITER,
+    } = config || {};
 
     const newConfig = {
       projectName,
@@ -73,7 +75,7 @@ export class AppName {
   }
 
   public parse(appName: string): void {
-    const parts = appName.split(this._config.nameDelimiter);
+    const parts = appName.split(this._config.nameDelimiter || DEFAUL_NAME_DELIMITER);
 
     if (parts.length !== 4) throw {
       section: 'AppName/parse',
@@ -162,7 +164,7 @@ export class AppName {
 
   public validate(config: IAppNameConfig): string {
     const {
-      nameDelimiter: delimiter,
+      nameDelimiter: delimiter = DEFAUL_NAME_DELIMITER,
     } = config;
     if (!config.projectName) return `projectName is required`;
     if (!config.machineName) return `machineName is required`;
